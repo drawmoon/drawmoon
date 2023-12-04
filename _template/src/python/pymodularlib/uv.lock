@@ -1,0 +1,31 @@
+version = 1
+revision = 2
+requires-python = ">=3.13"
+
+[manifest]
+members = [
+    "bar",
+    "foo",
+    "pymodularlib",
+]
+
+[[package]]
+name = "bar"
+version = "0.1.0"
+source = { virtual = "packages/bar" }
+dependencies = [
+    { name = "foo" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "foo", virtual = "packages/foo" }]
+
+[[package]]
+name = "foo"
+version = "0.1.0"
+source = { virtual = "packages/foo" }
+
+[[package]]
+name = "pymodularlib"
+version = "0.1.0"
+source = { virtual = "." }

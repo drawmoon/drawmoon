@@ -1,0 +1,9 @@
+
+
+
+setup:
+    @uv sync --all-packages
+
+
+test:
+    @uv run pytest
