@@ -1,0 +1,22 @@
+# example
+
+- Python
+  - LangChain
+  - ChatBob
+- CSharp
+  - ...
+- Java
+  - Arrow
+  - JGrapht
+  - OkHttp3
+  - POI
+- TypeScript
+  - AutoMapper
+  - AWS
+  - Express
+  - Express-proxy-middleware
+  - Koa
+  - Nest
+  - Puppeteer
+  - QuickGraph
+  - SSE
