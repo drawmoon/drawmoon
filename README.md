@@ -24,4 +24,5 @@ Here are some ideas to get you started:
 
 <br/>
 
+- 🍟 [cn2date](https://github.com/drawmoon/cn2date): 中文日期 、口语 转换为 日期字符串
 - 🐋 [container](https://github.com/drawmoon/container): 🚢 关于容器相关技术的使用。
