@@ -24,7 +24,7 @@ Here are some ideas to get you started:
 
 <br/>
 
-- 🍫 [klsql](https://github.com/drawmoon/klsql): klsql
+- 🍫 [Saber](https://github.com/drawmoon/klsql): 尝试写一个模型来生成你的 SQL
 - 🍟 [cn2date](https://github.com/drawmoon/cn2date): 中文日期 、口语 转换为 日期字符串
 - 🍩 [hybrid-cache](https://github.com/drawmoon/hybrid-cache): 混合的缓存工具库
 - 🍪 [smtfmt](https://github.com/drawmoon/smtfmt): TypeScript 版的 SmartFormat
