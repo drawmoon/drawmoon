@@ -51,3 +51,14 @@ conda init "$(basename "${SHELL}")"
 # conda init bash
 # conda init fish
 ```
+
+
+
+
+**Java**
+
+```sh
+sudo apt install openjdk-8-jdk
+
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+```

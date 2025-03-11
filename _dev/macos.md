@@ -46,6 +46,24 @@ sudo sh -c 'echo /opt/homebrew/bin/fish >> /etc/shells'
 chsh -s /opt/homebrew/bin/fish
 ```
 
+其他自定义配置:
+
+```sh
+# ~/.config/fish/config.fish
+source ~/.profile.fish
+
+
+# ~/.profile.fish
+source $HOME/.local/bin/env.fish
+
+
+# ~/.local/bin/env.fish
+if not contains "$HOME/.local/bin" $PATH
+    # Prepending path in case a system-installed binary needs to be overridden
+    set -x PATH "$HOME/.local/bin" $PATH
+end
+```
+
 
 **uv**
 
