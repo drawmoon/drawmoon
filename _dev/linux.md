@@ -62,3 +62,22 @@ sudo apt install openjdk-8-jdk
 
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 ```
+
+
+
+
+
+### WSL
+
+**Use Windows proxied connections**
+
+```sh
+# ~/.config/fish/config.fish
+
+set windowsip (grep nameserver < /etc/resolv.conf | awk '{print $2}')
+set selfip (ip route | grep default | awk '{print $3}')
+
+export HTTP_PROXY="http://$selfip:7897"
+export HTTPS_PROXY="http://$selfip:7897"
+export ALL_PROXY="http://$selfip:7897"
+```
