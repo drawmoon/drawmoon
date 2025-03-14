@@ -58,9 +58,24 @@ conda init "$(basename "${SHELL}")"
 **Java**
 
 ```sh
+# install OpenJDK
 sudo apt install openjdk-8-jdk
 
+
+# ~/.config/fish/config.fish
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+```
+
+**Gradle**
+
+```sh
+# install Gradle
+wget https://mirrors.cloud.tencent.com/gradle/gradle-8.9-bin.zip
+sudo unzip -d /opt/gradle ./gradle-8.9-bin.zip
+
+# ~/.config/fish/config.fish
+export GRADLE_HOME="/opt/gradle/gradle-8.9"
+set -x PATH "$GRADLE_HOME/bin" $PATH
 ```
 
 
